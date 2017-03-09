@@ -2,17 +2,9 @@
 	height: 36.6vw;
 }
 
-.swiper-container.swiper-container-vertial {
-	height: .3rem;
-	text-align: left;
-	display: inline-block;
-	width: 90%;
-	vertical-align: middle;
-	font-size: .22rem;
-}
-
 .swiper-slide img {
-	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -62,11 +54,11 @@
 
 .march_btn {
 	position: absolute;
-	left: 0;
-	top: 0;
-	width: 2.4rem;
-	height: 2.4rem;
-	background: url('../images/heart_icon.png') .1rem center no-repeat;
+	left: .8rem;
+	top: .4rem;
+	width: 2rem;
+	height: 2rem;
+	background: url('../images/heart_icon.png') center no-repeat;
 	background-size: 100% auto;
 	z-index: 2;
 	cursor: pointer;
@@ -86,7 +78,7 @@
 	text-align: center;
 	position: relative;
 	z-index: -1;
-	padding-top: 2.4rem;
+	padding-top: 2.8rem;
 }
 
 .march_list li {

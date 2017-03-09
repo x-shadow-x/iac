@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="max-age=3600" />
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="MobileOptimized" content="240" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<title>Become IAC Friend</title>
+	<link rel="stylesheet" href="../styles/common/cn.css">
+	<link rel="stylesheet" href="../styles/common/header.css">
+	<link rel="stylesheet" href="../styles/common/footer.css">
+	<link rel="stylesheet" href="../styles/module/become_iac_friend.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<script src="../js/common/jquery-1.12.4.min.js"></script>
+	<script src="../js/common/set_rem.js"></script>
+	<script src="../js/common/header.js"></script>
+</head>
+<body>
+	@@include('../include/header.html')
+	<div class="bg_pic_box">
+		<div class="bg_pic bg_pic_left" id="bgPicLeft"></div>
+		<div class="bg_pic bg_pic_center" id="bgCenter"></div>
+		<div class="bg_pic bg_pic_right" id="bgRight"></div>
+	</div>
+	<div class="guide_box">
+		<div class="guide">
+			<a href="#">HOME</a>
+			>
+			<a href="#">ABOUT</a>
+			>
+			<a href="#">IAC</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="content_box">
+			<h2>Become IAC Friend</h2>
+			<div class="info_input_box">
+				<input type="text" placeholder="YOUR EMAIL ADDRESS" class="email_input">
+				<input type="text" placeholder="ENTER CODE HERE" class="code">
+				<img src="../styles/images/code.jpg" alt="验证码" class="code_pic">
+			</div>
+			<div class="notification_box">
+				<label for="agreeCheckBox" class="agree_label">
+					<input type="checkbox" id="agreeCheckBox">
+					<span>Notification of Personal Data Collection</span>
+				</label>
+				<p>
+					The information provided will be used by the Festivals Offics of the Leisure and Cultural Services Department for delivering programme information for the Autumn Thematic Arts Festival only.Request for personal data access and correction should be addressed to the Festival Office.(Enquiries:2370 1004)
+				</p>
+			</div>
+			<div class="handle_box">
+				<button class="btn" id="reset">RESET</button>
+				<button class="btn submit">AGREE AND SUBMIT</button>
+			</div>
+		</div>
+
+		
+	</div>
+	@@include('../include/footer.html')
+	<script src="../js/module/become_iac_friend.js"></script>
+</body>
+</html>
