@@ -19,7 +19,7 @@ body {
     line-height: 1;
     font-family: 'Open Sans', sans-serif;
     font-size: .85rem;
-    background: url('../images/mainbg.jpg') 0 center repeat-y;
+    background: url('../images/mainbg.jpg') repeat-y center top;
     background-size: 100% auto;
     color: #333;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
