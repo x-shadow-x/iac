@@ -187,6 +187,7 @@
 .programme_name_box {
 	font-size: 1.2rem;
 	font-family: GothamLight;
+	line-height: 2rem;
 }
 
 .blod_text {
@@ -227,6 +228,7 @@
 	.tab_menu li {
 		display: block;
 		width: auto;
+		line-height: 4rem;
 	}
 
 	.tab_menu li + li {
