@@ -101,6 +101,15 @@
 	cursor: default;
 }
 
+.book_btn {
+	display: block;
+	color: #fff;
+	background: #ef9200;
+	line-height: 3.2rem;
+	text-align: center;
+	margin: .8rem 0;
+}
+
 .brand_logo {
 	position: absolute;
 	right: 0;
