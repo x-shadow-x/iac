@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="max-age=3600" />
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="MobileOptimized" content="240" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<title>School Tour List</title>
+	<link rel="stylesheet" href="../styles/common/cn.css">
+	<link rel="stylesheet" href="../styles/common/header.css">
+	<link rel="stylesheet" href="../styles/common/footer.css">
+	<link rel="stylesheet" href="../styles/module/school_tour_list.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<script src="../js/common/jquery-1.12.4.min.js"></script>
+	<script src="../js/common/set_rem.js"></script>
+	<script src="../js/common/header.js"></script>
+</head>
+<body>
+	@@include('../include/header.html')
+	<div class="bg_pic_box">
+		<div class="bg_pic bg_pic_left" id="bgPicLeft"></div>
+		<div class="bg_pic bg_pic_center" id="bgCenter"></div>
+		<div class="bg_pic bg_pic_right" id="bgRight"></div>
+	</div>
+	<div class="guide_box">
+		<div class="guide">
+			<a href="#">HOME</a>
+			>
+			<a href="#">SCHOOL TOURING PROGRAMMES</a>
+		</div>
+	</div>
+	<div class="main">
+		<ul class="tab_menu" id="tabMenu">
+			<li>
+				<a href="javascript:void(0)">ALL</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">THEATRE</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">MUSIC</a>
+			</li>
+			<li class="active">
+				<a href="javascript:void(0)">MULT-ARTS</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">OTHER</a>
+			</li>
+		</ul>
+		<ul class="program_list">
+			<li class="program_item">
+				<div class="program_pic_box">
+					<div class="pic_box">
+						<img src="../styles/images/program_pic.jpg" alt="" class="program_pic">
+						<img src="../styles/images/program_left_icon.png" class="age_appropriate_icon" alt="">
+					</div>
+					<div class="march_btn_box">
+			    		<i class="march_btn"></i>
+			    		<ul class="march_list">
+			    			<li>14.7（Fn）7：30pm</li>
+			    			<li class="active">15.7（Sat）7：30pm</li>
+			    			<li>16.7（Sun）7：30pm</li>
+			    		</ul>
+			    	</div>
+				</div>
+				<div class="program_info">
+					<p class="theatre_info">Theatre Roin | UK</p>
+					<div class="programme_name_box">
+						<span class="blod_text">Be a Percussionist</span>
+						<span>Music Workshop</span>
+					</div>
+				</div>
+				<div class="time_box">
+					<span class="time">14-16.7（Thu-Sat）</span>
+				</div>
+				<div class="admission_tip_box">
+					<span class="admission_tip">FREE ADMISSION</span>
+				</div>
+			</li>
+			<li class="program_item">
+				<div class="program_pic_box">
+					<div class="pic_box">
+						<img src="../styles/images/program_pic.jpg" alt="" class="program_pic">
+						<img src="../styles/images/program_left_icon.png" class="age_appropriate_icon" alt="">
+					</div>
+					<div class="march_btn_box">
+			    		<i class="march_btn"></i>
+			    		<ul class="march_list">
+			    			<li>14.7（Fn）7：30pm</li>
+			    			<li class="active">15.7（Sat）7：30pm</li>
+			    			<li>16.7（Sun）7：30pm</li>
+			    		</ul>
+			    	</div>
+				</div>
+				<div class="program_info">
+					<p class="theatre_info">Theatre Roin | UK</p>
+					<div class="programme_name_box">
+						<span class="blod_text">Be a Percussionist</span>
+						<span>Music Workshop</span>
+					</div>
+				</div>
+				<div class="time_box">
+					<span class="time">14-16.7（Thu-Sat）</span>
+				</div>
+				<div class="admission_tip_box">
+					<span class="admission_tip">FREE ADMISSION</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	@@include('../include/footer.html')
+	<script src="../js/module/school_tour_list.js"></script>
+</body>
+</html>

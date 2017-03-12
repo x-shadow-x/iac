@@ -73,6 +73,8 @@ header {
 	margin-left: 10px;
 }
 
+.top_handle_menu .share_to_box,
+.top_handle_menu .font_size_box,
 .top_handle_menu .language_box {
 	display: inline-block;
 	width: 24px;
@@ -90,18 +92,8 @@ header {
 	background-color: transparent;
 }
 
-.top_handle_menu .share_to:before {
-	background-image: url('../images/share_icon.png');
-}
-
-.top_handle_menu .facebook:before {
-	background-image: url('../images/icon-facebook.png');
-}
-
-.top_handle_menu .fontsize:before {
-	background-image: url('../images/icon-fontsize.png');
-}
-
+.top_handle_menu .share_to:before,
+.top_handle_menu .font_size:before,
 .top_handle_menu .language:before {
 	position: absolute;
 	left: 0;
@@ -113,7 +105,29 @@ header {
 	padding: 0;
 }
 
-.language_list {
+.top_handle_menu .share_to:before {
+	background-image: url('../images/share_icon.png');
+}
+
+.top_handle_menu .font_size:before {
+	background-image: url('../images/icon-fontsize.png');
+}
+
+.font_size_list .small_size {
+	font-size: 14px;
+}
+
+.font_size_list .middle_size {
+	font-size: 16px;
+}
+
+.font_size_list .big_size {
+	font-size: 18px;
+}
+
+.share_to_list,
+.language_list,
+.font_size_list {
 	position: absolute;
 	left: -6px;
 	top: -4px;
@@ -127,6 +141,77 @@ header {
 	border-radius: 10px;
 	line-height: 22px;
 	display: none;
+}
+
+.share_to_list {
+	font-size: 0;
+	width: 20rem;
+	text-align: center;
+	left: auto;
+	right: -6px;
+}
+
+.share_to_list a {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: .85rem;
+	line-height: 36px;
+	width: 6rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: left;
+	padding: 0 5px;
+}
+
+.share_to_list>a {
+	position: relative;
+	z-index: 3;
+}
+
+.share_to_list>a.more {
+	position: static;
+}
+
+.share_to_list a:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+	background: url('../images/social-icon-email.png') center no-repeat;
+	background-size: 100% auto;
+}
+
+.more_share_to_list {
+	position: absolute;
+	right: 0;
+	top: 66px;
+	width: 6rem;
+	padding-top: 56px;
+	background: none;
+	display: none;
+	z-index: -1;
+	width: 20rem;
+	border-radius: 10px;
+}
+
+.more_share_to_list:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #2aa9de;
+	right: 3rem;
+	top: 36px;
+}
+
+.more_share_to_list .bg_hover {
+	text-align: left;
+	background: #2aa9de;
+	border-radius: 10px;
 }
 
 .language_list .tip_rest {
@@ -146,7 +231,8 @@ header {
 	margin-left: .3rem;
 }
 
-.language_list li.active {
+.language_list li.active,
+.font_size_list li.active{
 	color: #68bee2;
 }
 
@@ -231,6 +317,20 @@ header {
 	display: none;
 }
 
+.to_top {
+	position: fixed;
+    right: 2rem;
+    bottom: 20rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+    background: url('../images/to_top_icon.png') center no-repeat;
+    background-size: 2.4rem auto;
+    background-color: rgba(42, 169, 239, .8);
+    z-index: 103;
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
 	header {
 		height: 4rem;
@@ -309,6 +409,8 @@ header {
 		margin-left: 0;
 	}
 
+	.top_handle_menu .share_to_box,
+	.top_handle_menu .font_size_box,
 	.top_handle_menu .language_box {
 		height: auto;
 		margin-left: 0;
@@ -317,18 +419,47 @@ header {
 		width: auto;
 	}
 
+	.top_handle_menu .share_to,
+	.top_handle_menu .font_size,
 	.top_handle_menu .language {
 		z-index: 2;
 		display: block;
 		position: relative;
 	}
 
+	.top_handle_menu .share_to:before,
+	.top_handle_menu .font_size:before,
 	.top_handle_menu .language:before {
 		width: 24px;
 		height: 24px;
 		position: static;
 	}
 
+	.share_to_list a {
+		display: block;
+		width: auto;
+		border-bottom: 1px solid #50B8E4;
+		line-height: 4rem;
+		padding-left: 8%;
+	}
+
+	.more_share_to_list {
+		position: static;
+		width: auto;
+		padding-top: 0;
+	}
+
+	.more_share_to_list .bg_hover {
+		background: none;
+		border-radius: 0;
+	}
+
+	.more_share_to_list:before {
+		display: none;
+	}
+
+	.share_to_list,
+	.font_size_list,
 	.language_list {
 		position: relative;
 		left: 0;
@@ -341,6 +472,7 @@ header {
 		line-height: 4rem;
 	}
 
+	.font_size_list li,
 	.language_list li {
 		border-bottom: 1px solid #50B8E4;
 	}
@@ -349,6 +481,7 @@ header {
 		display: inline-block;
 	}
 
+	.font_size_list li:before,
 	.language_list li:before {
 		content: '';
 		display: inline-block;

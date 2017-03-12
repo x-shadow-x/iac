@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="max-age=3600" />
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="MobileOptimized" content="240" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<title>School Tour List</title>
+	<link rel="stylesheet" href="../styles/common/cn.css">
+	<link rel="stylesheet" href="../styles/common/header.css">
+	<link rel="stylesheet" href="../styles/common/footer.css">
+	<link rel="stylesheet" href="../styles/module/school_tour_list.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<script src="../js/common/jquery-1.12.4.min.js"></script>
+	<script src="../js/common/set_rem.js"></script>
+	<script src="../js/common/header.js"></script>
+</head>
+<body>
+	<header>
+    <div class="header_content">
+    	<a href="#" class="logo"></a>
+	    <div class="header_menu_box" id="headerMenuBtn">
+	        <div class="header_menu_mobile_box" id="headerMenuMobileBox">
+	        	<div class="top_handle_menu">
+		            <a href="javascript:void(0)" class="handle_icon joinus"><span class="handle_icon_tip_mobile">MECOME IAC FRIENDS</span></a>
+
+		            <div class="share_to_box">
+		                <a href="javascript:void(0)" class="handle_icon share_to" id="shareToBtn"><span class="handle_icon_tip_mobile">Share To</span></a>
+		                <div class="share_to_list" id="shareToList">
+		                    <a href="javascript:void(0)" class="active email">Email</a>
+		                    <a href="javascript:void(0)" class="fb">FB</a>
+		                    <a href="javascript:void(0)" class="twitter">twitter</a>
+		                    <a href="javascript:void(0)" class="google">google+</a>
+		                    <a href="javascript:void(0)" class="linkdin">linkdin</a>
+		                    <a href="javascript:void(0)" class="more" id="moreShareToBtn">more</a>
+		                    <div class="more_share_to_list" id="moreShareToList">
+		                    	<div class="bg_hover">
+		                    		<a href="javascript:void(0)" class="pinter">pinter</a>
+			                    	<a href="javascript:void(0)" class="weibo">weibo</a>
+			                    	<a href="javascript:void(0)" class="tumbir">tumbir</a>
+			                    	<a href="javascript:void(0)" class="baidu">baidu</a>
+			                    	<a href="javascript:void(0)" class="blogger">blogger</a>
+			                    	<a href="javascript:void(0)" class="gmail">gmail</a>
+			                    	<a href="javascript:void(0)" class="yahoo">yahoo</a>
+		                    	</div>
+		                    </div>
+		                </div>
+		            </div>
+
+		            
+		            <div class="font_size_box">
+		                <a href="javascript:void(0)" class="handle_icon font_size" id="fontSizeBtn"><span class="handle_icon_tip_mobile">CHANGE FONT SIZE</span></a>
+		                <ul class="font_size_list" id="fontSizeList">
+		                    <li class="active small_size" data-size="14px">A</li>
+		                    <li class="middle_size" data-size="16px">A</li>
+		                    <li class="big_size" data-size="18px">A</li>
+		                </ul>
+		            </div>
+		            <div class="language_box">
+		                <a class="handle_icon language" id="languageBtn"><span class="handle_icon_tip_mobile">LANGUAGE</span></a>
+		                <ul class="language_list" id="languageList">
+		                    <li class="active">EN<span class="tip_rest">GLISH</span></li>
+		                    <li>繁体<span class="tip_rest">中文</span></li>
+		                    <li>简体<span class="tip_rest">中文</span></li>
+		                </ul>
+		            </div>
+		        </div>
+		        <ul class="menu_list">
+		            <li class="active"><a class="home" href="javascript:void(0)">HOME</a></li>
+		            <li><a class="new" href="javascript:void(0)">WHAT'S NEW</a></li>
+		            <li><a class="stage" href="javascript:void(0)">STAGE PROGRAME</a></li>
+		            <li><a class="school" href="javascript:void(0)">SCHOOL TOURING</a></li>
+		            <li><a class="outreach" href="javascript:void(0)">OUTREACH TOURING</a></li>
+		            <li><a class="iac" href="javascript:void(0)">IAC PLUS</a></li>
+		            <li><a class="other" href="javascript:void(0)">OTHER ACTIVITIES</a></li>
+		        </ul>
+		        <div class="mobile_hover"></div>
+	        </div>
+	    </div>
+    </div>
+</header>
+<div class="header_fillter"></div>
+<div class="to_top" id="toTop"></div>
+
+	<div class="bg_pic_box">
+		<div class="bg_pic bg_pic_left" id="bgPicLeft"></div>
+		<div class="bg_pic bg_pic_center" id="bgCenter"></div>
+		<div class="bg_pic bg_pic_right" id="bgRight"></div>
+	</div>
+	<div class="guide_box">
+		<div class="guide">
+			<a href="#">HOME</a>
+			>
+			<a href="#">SCHOOL TOURING PROGRAMMES</a>
+		</div>
+	</div>
+	<div class="main">
+		<ul class="tab_menu" id="tabMenu">
+			<li>
+				<a href="javascript:void(0)">ALL</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">THEATRE</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">MUSIC</a>
+			</li>
+			<li class="active">
+				<a href="javascript:void(0)">MULT-ARTS</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)">OTHER</a>
+			</li>
+		</ul>
+		<ul class="program_list">
+			<li class="program_item">
+				<div class="program_pic_box">
+					<div class="pic_box">
+						<img src="../styles/images/program_pic.jpg" alt="" class="program_pic">
+						<img src="../styles/images/program_left_icon.png" class="age_appropriate_icon" alt="">
+					</div>
+					<div class="march_btn_box">
+			    		<i class="march_btn"></i>
+			    		<ul class="march_list">
+			    			<li>14.7（Fn）7：30pm</li>
+			    			<li class="active">15.7（Sat）7：30pm</li>
+			    			<li>16.7（Sun）7：30pm</li>
+			    		</ul>
+			    	</div>
+				</div>
+				<div class="program_info">
+					<p class="theatre_info">Theatre Roin | UK</p>
+					<div class="programme_name_box">
+						<span class="blod_text">Be a Percussionist</span>
+						<span>Music Workshop</span>
+					</div>
+				</div>
+				<div class="time_box">
+					<span class="time">14-16.7（Thu-Sat）</span>
+				</div>
+				<div class="admission_tip_box">
+					<span class="admission_tip">FREE ADMISSION</span>
+				</div>
+			</li>
+			<li class="program_item">
+				<div class="program_pic_box">
+					<div class="pic_box">
+						<img src="../styles/images/program_pic.jpg" alt="" class="program_pic">
+						<img src="../styles/images/program_left_icon.png" class="age_appropriate_icon" alt="">
+					</div>
+					<div class="march_btn_box">
+			    		<i class="march_btn"></i>
+			    		<ul class="march_list">
+			    			<li>14.7（Fn）7：30pm</li>
+			    			<li class="active">15.7（Sat）7：30pm</li>
+			    			<li>16.7（Sun）7：30pm</li>
+			    		</ul>
+			    	</div>
+				</div>
+				<div class="program_info">
+					<p class="theatre_info">Theatre Roin | UK</p>
+					<div class="programme_name_box">
+						<span class="blod_text">Be a Percussionist</span>
+						<span>Music Workshop</span>
+					</div>
+				</div>
+				<div class="time_box">
+					<span class="time">14-16.7（Thu-Sat）</span>
+				</div>
+				<div class="admission_tip_box">
+					<span class="admission_tip">FREE ADMISSION</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<footer>
+    <div class="footer_menu_box">
+        <div class="footer_content">
+        	<ul>
+	            <li><a href="#">About IAC</a></li>
+	            <li><a href="#">Opening Programme</a></li>
+	            <li><a href="#">Stage Programme</a></li>
+	            <li><a href="#">Film Programme</a></li>
+	        </ul>
+	        <ul>
+	            <li><a href="#">School Touring</a></li>
+	            <li><a href="#">Outreach Touring</a></li>
+	            <li><a href="#">IAC Plus</a></li>
+	            <li><a href="#">Other Activities</a></li>
+	        </ul>
+	        <ul>
+	            <li><a href="#">What's New</a></li>
+	            <li><a href="#">Download</a></li>
+	            <li><a href="#">Ticketing Information</a></li>
+	            <li><a href="#">Tips</a></li>
+	        </ul>
+	        <ul>
+	            <li><a href="#">Become IAC Friends</a></li>
+	            <li><a href="#">E-Newsletter</a></li>
+	            <li><a href="#">Past IAC</a></li>
+	            <li><a href="#">Sitemap</a></li>
+	            <li><a href="#">My Timeline</a></li>
+	        </ul>
+        </div>
+    </div>
+
+    <div class="page_footer">
+    	<div class="footer_content">
+    		<ul class="sponsor_list">
+    			<li><img src="../styles/images/footer-logo-a.png" alt=""></li>
+    			<li><img src="../styles/images/footer-logo-b.png" alt=""></li>
+    			<li class="footer_logo_c"><img src="../styles/images/footer-logo-c.png" alt=""></li>
+    			<li class="footer_logo_d"><img src="../styles/images/footer-logo-d.png" alt=""></li>
+    		</ul>
+    		<div class="copy_right_box">
+    			<p>
+    				Copyright © 2017 by the Leisure and Cultural Services Department
+    			</p>
+    			<p class="strong">
+    				Privacy Policy | Important Notices | About Festivals Office | Back to LCSD | Feedback
+    			</p>
+    			<p>
+    				Last Update Date： 24.02.2017
+    			</p>
+    		</div>
+    	</div>
+    </div>
+</footer>
+	<script src="../js/module/school_tour_list.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Cache-Control" content="max-age=3600" />
+	<meta http-equiv="Cache-Control" content="no-transform"/>
+	<meta name="MobileOptimized" content="240" />
+	<meta name="apple-touch-fullscreen" content="YES" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+	<title>Homepage</title>
+	<link rel="stylesheet" href="./styles/common/cn.css">
+	<link rel="stylesheet" href="./styles/common/header.css">
+	<link rel="stylesheet" href="./styles/common/footer.css">
+	<link rel="stylesheet" href="./styles/common/swiper.min.css">
+	<link rel="stylesheet" href="./styles/module/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<script src="./js/common/set_rem.js"></script>
+	
+</head>
+<body>
+	@@include('./include/header.html')
+	<div class="bg_pic_box">
+		<div class="bg_pic bg_pic_left" id="bgPicLeft"></div>
+		<div class="bg_pic bg_pic_center" id="bgCenter"></div>
+		<div class="bg_pic bg_pic_right" id="bgRight"></div>
+	</div>
+	<div class="main">
+		<div class="swiper-container swiper_ontainer_banner" id="swiperContainerBanner">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide swiper-no-swiping">
+	            	<img src="../styles/images/program_banner1.jpg" alt="视频预览图" class="video_pic">
+	            	<video class="video">
+				        <source src="./styles/images/testvideo.mp4" type="video/mp4" />
+				        <source src="movie.ogg" type="video/ogg" />
+				        <source src="movie.webm" type="video/webm" />
+				        <object data=".../styles/images/testvideo.mp4" width="320" height="240">
+				            <embed src="movie.swf" width="320" height="240" />
+				        </object>
+				    </video>
+				    <span class="play_btn"></span>
+					<div class="banner_intro_box">
+						<span class="age_appropriate_icon"></span>
+						<h2 class="video_intro_title">The Adventures of <strong>Siu2Fei1</strong></h2>
+						<p>by Shu Ning Presentation Unit</p>
+						<a href="javascript:void(0)" class="detail_link">DETAILS</a>
+					</div>
+	            </div>
+	            <div class="swiper-slide swiper-no-swiping">
+	            	<img src="../styles/images/program_banner2.jpg" alt="banner图片">
+	            	<div class="banner_intro_box">
+						<span class="age_appropriate_icon"></span>
+						<h2 class="video_intro_title">The Adventures of <strong>Siu2Fei1</strong></h2>
+						<p>by Shu Ning Presentation Unit</p>
+						<a href="javascript:void(0)" class="detail_link">DETAILS</a>
+					</div>
+	            </div>
+	            <div class="swiper-slide swiper-no-swiping">
+	            	<img src="../styles/images/program_banner3.jpg" alt="banner图片">
+	            	<div class="banner_intro_box">
+						<span class="age_appropriate_icon"></span>
+						<h2 class="video_intro_title">The Adventures of <strong>Siu2Fei1</strong></h2>
+						<p>by Shu Ning Presentation Unit</p>
+						<a href="javascript:void(0)" class="detail_link">DETAILS</a>
+					</div>
+	            </div>
+	            <div class="swiper-slide swiper-no-swiping">
+	            	<img src="../styles/images/program_banner4.jpg" alt="banner图片">
+	            	<div class="banner_intro_box">
+						<span class="age_appropriate_icon"></span>
+						<h2 class="video_intro_title">The Adventures of <strong>Siu2Fei1</strong></h2>
+						<p>by Shu Ning Presentation Unit</p>
+						<a href="javascript:void(0)" class="detail_link">DETAILS</a>
+					</div>
+	            </div>
+	        </div>
+
+	        <div class="swiper-button-next" id="bannerSwiperButtonNext"></div>
+	        <div class="swiper-button-prev" id="bannerSwiperButtonPrev"></div>
+	    </div>
+
+	    <div class="filter_content">
+			<form action="">
+				<div class="select_box">
+					<select name="" id="">
+						<option value="1">DATE</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="select_box">
+					<select name="" id="">
+						<option value="1">VENUE</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="select_box short_select_box">
+					<select name="" id="">
+						<option value="1">AGE GROUP</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<input type="submit" class="submit_btn" value="SEARCH"/>
+				<input type="submit" class="submit_btn advanced_search" value="ADVANCED SEARCH"/>
+			</form>
+		</div>
+
+		<div class="swiper-container swiper_ontainer_notice" id="swiperContainerNotice">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide">
+	            	<div class="swiper_slide_content">
+	            		<div class="title_box">
+		            		<h2 class="main_title">TWIST & TURN</h2>
+		            		<h2>PARENT-CHILD CLOWN WORKSHOP</h2>
+		            	</div>
+		            	<p class="content">
+		            		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ea velit, doloremque, eveniet consequuntur est distinctio repudiandae sed culpa, animi accusamus ipsam. Nostrum eum sed assumenda, illum sunt, dignissimos molestias!
+		            	</p>
+		            	<span class="time_tip">14-15 July</span>
+	            	</div>
+	            </div>
+	        </div>
+
+	        <div class="swiper-button-next" id="noticeSwiperButtonNext"></div>
+	        <div class="swiper-button-prev" id="noticeSwiperButtonPrev"></div>
+	    </div>
+
+	    <ul class="program_type_list">
+	    	<li>
+	    		<a href="javascript:void(0)">
+	    			<img src="./styles/images/program_type1.jpg" alt="program_type1.jpg">
+	    		</a>
+	    	</li>
+	    	<li>
+	    		<a href="javascript:void(0)">
+	    			<img src="./styles/images/program_type2.jpg" alt="program_type2.jpg">
+	    		</a>
+	    	</li>
+	    	<li>
+	    		<a href="javascript:void(0)">
+	    			<img src="./styles/images/program_type3.jpg" alt="program_type3.jpg">
+	    		</a>
+	    	</li>
+	    	<li>
+	    		<a href="javascript:void(0)">
+	    			<img src="./styles/images/program_type4.jpg" alt="program_type4.jpg">
+	    		</a>
+	    	</li>
+	    </ul>
+	</div>
+
+	<div class="video_hover" id="videoHover">
+		<video class="video">
+	        <source src="./styles/images/testvideo.mp4" type="video/mp4" />
+	        <source src="movie.ogg" type="video/ogg" />
+	        <source src="movie.webm" type="video/webm" />
+	        <object data=".../styles/images/testvideo.mp4" width="320" height="240">
+	            <embed src="movie.swf" width="320" height="240" />
+	        </object>
+	    </video>
+	</div>
+	@@include('./include/footer.html')
+	<script src="./js/common/jquery-1.12.4.min.js"></script>
+	<script src="./js/common/header.js"></script>
+	<script src="./js/common/swiper.min.js"></script>
+	<script src="./js/module/index.js"></script>
+</body>
+</html>

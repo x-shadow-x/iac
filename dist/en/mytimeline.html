@@ -28,10 +28,40 @@
 	    <div class="header_menu_box" id="headerMenuBtn">
 	        <div class="header_menu_mobile_box" id="headerMenuMobileBox">
 	        	<div class="top_handle_menu">
-		            <a href="#" class="handle_icon joinus"><span class="handle_icon_tip_mobile">MECOME IAC FRIENDS</span></a>
-		            <a href="#" class="handle_icon share_to"><span class="handle_icon_tip_mobile">Share To</span></a>
-		            <!-- <a href="#" class="handle_icon facebook"><span class="handle_icon_tip_mobile">FACEBOOK</span></a> -->
-		            <a href="#" class="handle_icon fontsize"><span class="handle_icon_tip_mobile">CHANGE FONT SIZE</span></a>
+		            <a href="javascript:void(0)" class="handle_icon joinus"><span class="handle_icon_tip_mobile">MECOME IAC FRIENDS</span></a>
+
+		            <div class="share_to_box">
+		                <a href="javascript:void(0)" class="handle_icon share_to" id="shareToBtn"><span class="handle_icon_tip_mobile">Share To</span></a>
+		                <div class="share_to_list" id="shareToList">
+		                    <a href="javascript:void(0)" class="active email">Email</a>
+		                    <a href="javascript:void(0)" class="fb">FB</a>
+		                    <a href="javascript:void(0)" class="twitter">twitter</a>
+		                    <a href="javascript:void(0)" class="google">google+</a>
+		                    <a href="javascript:void(0)" class="linkdin">linkdin</a>
+		                    <a href="javascript:void(0)" class="more" id="moreShareToBtn">more</a>
+		                    <div class="more_share_to_list" id="moreShareToList">
+		                    	<div class="bg_hover">
+		                    		<a href="javascript:void(0)" class="pinter">pinter</a>
+			                    	<a href="javascript:void(0)" class="weibo">weibo</a>
+			                    	<a href="javascript:void(0)" class="tumbir">tumbir</a>
+			                    	<a href="javascript:void(0)" class="baidu">baidu</a>
+			                    	<a href="javascript:void(0)" class="blogger">blogger</a>
+			                    	<a href="javascript:void(0)" class="gmail">gmail</a>
+			                    	<a href="javascript:void(0)" class="yahoo">yahoo</a>
+		                    	</div>
+		                    </div>
+		                </div>
+		            </div>
+
+		            
+		            <div class="font_size_box">
+		                <a href="javascript:void(0)" class="handle_icon font_size" id="fontSizeBtn"><span class="handle_icon_tip_mobile">CHANGE FONT SIZE</span></a>
+		                <ul class="font_size_list" id="fontSizeList">
+		                    <li class="active small_size" data-size="14px">A</li>
+		                    <li class="middle_size" data-size="16px">A</li>
+		                    <li class="big_size" data-size="18px">A</li>
+		                </ul>
+		            </div>
 		            <div class="language_box">
 		                <a class="handle_icon language" id="languageBtn"><span class="handle_icon_tip_mobile">LANGUAGE</span></a>
 		                <ul class="language_list" id="languageList">
@@ -42,13 +72,13 @@
 		            </div>
 		        </div>
 		        <ul class="menu_list">
-		            <li class="active"><a class="home" href="#">HOME</a></li>
-		            <li><a class="new" href="#">WHAT'S NEW</a></li>
-		            <li><a class="stage" href="#">STAGE PROGRAME</a></li>
-		            <li><a class="school" href="#">SCHOOL TOURING</a></li>
-		            <li><a class="outreach" href="#">OUTREACH TOURING</a></li>
-		            <li><a class="iac" href="#">IAC PLUS</a></li>
-		            <li><a class="other" href="#">OTHER ACTIVITIES</a></li>
+		            <li class="active"><a class="home" href="javascript:void(0)">HOME</a></li>
+		            <li><a class="new" href="javascript:void(0)">WHAT'S NEW</a></li>
+		            <li><a class="stage" href="javascript:void(0)">STAGE PROGRAME</a></li>
+		            <li><a class="school" href="javascript:void(0)">SCHOOL TOURING</a></li>
+		            <li><a class="outreach" href="javascript:void(0)">OUTREACH TOURING</a></li>
+		            <li><a class="iac" href="javascript:void(0)">IAC PLUS</a></li>
+		            <li><a class="other" href="javascript:void(0)">OTHER ACTIVITIES</a></li>
 		        </ul>
 		        <div class="mobile_hover"></div>
 	        </div>
@@ -56,6 +86,7 @@
     </div>
 </header>
 <div class="header_fillter"></div>
+<div class="to_top" id="toTop"></div>
 
 	<div class="bg_pic_box">
 		<div class="bg_pic bg_pic_left" id="bgPicLeft"></div>
@@ -348,7 +379,6 @@
     	</div>
     </div>
 </footer>
-
 	<script src="../js/common/swiper.min.js"></script>
 	<script src="../js/module/mytimeline.js"></script>
 </body>
